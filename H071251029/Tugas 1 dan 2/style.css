@@ -1,0 +1,219 @@
+/* Mengatur seluruh halaman */
+body {
+    font-family: Georgia, serif;
+    margin: 0;
+    background-color: #FDEEEA;
+    color: #333333;
+}
+
+/* Mengatur judul utama */
+h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+/* Mengatur judul section */
+h2 {
+    color: #C04482;
+    border-bottom: 3px solid #FC8A8E;
+    padding-bottom: 8px;
+}
+
+/* Mengatur semua gambar */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+   /* ID SELECTOR */
+
+/* Bagian header */
+#beranda {
+    border-top: 5px solid #34C8C5;
+}
+
+/* Bagian galeri */
+#g aleri {
+    border-top: 5px solid #DF84BD;
+}
+
+/*HEADER*/
+
+header {
+    background-color: #34C8C5;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+/* NAVIGASI */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    background-color: #DF84BD;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+}
+
+/* Pseudo-class hover */
+nav a:hover {
+    color: #FEE09D;
+}
+
+/* CLASS SELECTOR */
+
+/* Mengatur pembungkus galeri */
+.gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+/* Mengatur gambar dalam galeri */
+.gallery img {
+    width: 30%;
+    border-radius: 12px;
+    border: 3px solid #FC8A8E;
+}
+
+/* BOX MODEL */
+
+section {
+    background-color: white;
+    max-width: 900px;
+
+    /* Margin: jarak luar */
+    margin: 22px auto;
+
+    /* Padding: jarak dalam */
+    padding: 25px;
+
+    /* Border: garis tepi */
+    border: 2px solid #DF84BD;
+
+    border-radius: 15px;
+}
+
+/* DAFTAR AKTIVITAS */
+
+li {
+    margin: 12px;
+}
+
+/* TABEL */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #FEE09D;
+}
+
+th,
+td {
+    border: 1px solid #FC8A8E;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #FFAE69;
+}
+
+/* FORMULIR */
+
+form {
+    background-color: #FEE09D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+input,
+select,
+textarea {
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #DF84BD;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+/* Tombol kirim */
+input[type="submit"] {
+    background-color: #FC8A8E;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Hover pada tombol */
+input[type="submit"]:hover {
+    background-color: #DF84BD;
+}
+
+/* MULTIMEDIA */
+
+iframe {
+    max-width: 100%;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #34C8C5;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* RESPONSIVE DESIGN */
+
+/* Tampilan untuk layar kecil */
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 26px;
+    }
+
+    section {
+        margin: 15px;
+        padding: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 8px;
+    }
+
+    .gallery {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
