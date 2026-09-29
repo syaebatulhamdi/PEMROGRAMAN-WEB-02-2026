@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yurose - Toko Bunga & Gift</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'serif'],
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-black-950 text-white font-sans bg-black">
+    <!-- NAVIGASI -->   
+    <nav class="sticky top-0 z-50 bg-neutral-900/50 backdrop-blur-md border-b border-neutral-900">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="font-serif text-2xl tracking-widest text-rose-300 font-semibold uppercase">🌸 Yurose</a>
+            
+            <div class="hidden md:flex items-center space-x-8 text-sm uppercase tracking-wider text-neutral-400">
+                <a href="#beranda" class="hover:text-rose-300 transition-colors">Beranda</a>
+                <a href="#tentang" class="hover:text-rose-300 transition-colors">Tentang</a>
+                <a href="#koleksi" class="hover:text-rose-300 transition-colors">Koleksi</a>
+                <a href="#makna" class="hover:text-rose-300 transition-colors">Makna Bunga</a>
+                <a href="#pesan" class="hover:text-rose-300 transition-colors">Pemesanan</a>
+            </div>
+
+            <a href="https://web.whatsapp.com/" class="hidden md:inline-block bg-rose-300 hover:bg-rose-400 text-neutral-950 text-xs font-semibold uppercase tracking-wider px-5 py-2.5 rounded-full transition-all">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <!-- 2. HEADER & HERO SECTION -->
+    <header id="beranda" class="relative min-h-[85vh] flex items-center justify-center bg-neutral-900 border-b border-neutral-800 overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <img src="BgFoto.jpg" alt="Hero Flower Bouquet" class="w-full h-full object-cover opacity-75">
+            <div class="absolute inset-0 bg-gradient-to-t from-neutral-950 via-neutral-950/50 to-transparent"></div>
+        </div>
+
+        <div class="relative z-10 max-w-4xl mx-auto text-center px-6 py-12">
+            <span class="text-rose-400 text-xs md:text-sm uppercase tracking-[0.3em] font-medium block mb-4">More Than Just Flowers</span>
+            <h1 class="font-serif text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
+                Rangkaian Bunga untuk Setiap Cerita Spesialmu
+            </h1>
+            <p class="text-neutral-400 text-base md:text-lg max-w-2xl mx-auto mb-8 font-light leading-relaxed">
+                Dari ucapan sederhana hingga momen tak terlupakan, Yurose hadir menyampaikan perasaan terindahmu lewat bunga segar pilihan.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#koleksi" class="w-full sm:w-auto bg-rose-300 hover:bg-rose-400 text-neutral-950 font-medium px-8 py-3.5 rounded-full transition-all text-sm uppercase tracking-wider">
+                    Jelajahi Koleksi
+                </a>
+                <a href="#tentang" class="w-full sm:w-auto border border-neutral-700 hover:border-neutral-500 text-neutral-300 font-medium px-8 py-3.5 rounded-full transition-all text-sm uppercase tracking-wider">
+                    Pelajari Lebih Lanjut
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- 3. TENTANG (ABOUT SECTION) -->
+    <section id="tentang" class="py-20 px-6 border-b border-neutral-800 bg-neutral-950">
+        <div class="max-w-7xl mx-auto">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-6">
+                    <span class="text-rose-400 text-xs uppercase tracking-widest font-semibold">Tentang Yurose</span>
+                    <h2 class="font-serif text-3xl md:text-5xl font-bold text-white leading-tight">
+                        Lebih dari Sekadar Toko Bunga
+                    </h2>
+                    <p class="text-neutral-400 leading-relaxed text-sm md:text-base">
+                        Yurose lahir dari kecintaan kami pada keindahan dan makna mendalam di balik setiap helai kelopak bunga. Kami percaya bahwa bunga adalah bahasa universal untuk merayakan cinta, apresiasi, dan harapan.
+                    </p>
+                    
+                    <div class="grid grid-cols-3 gap-4 pt-6 border-t border-neutral-800">
+                        <div>
+                            <span class="font-serif text-3xl md:text-4xl font-bold text-rose-300 block">4+</span>
+                            <span class="text-xs text-neutral-400 uppercase tracking-wider">Tahun Pengalaman</span>
+                        </div>
+                        <div>
+                            <span class="font-serif text-3xl md:text-4xl font-bold text-rose-300 block">67K+</span>
+                            <span class="text-xs text-neutral-400 uppercase tracking-wider">Pelanggan Bahagia</span>
+                        </div>
+                        <div>
+                            <span class="font-serif text-3xl md:text-4xl font-bold text-rose-300 block">100%</span>
+                            <span class="text-xs text-neutral-400 uppercase tracking-wider">Bunga Segar</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="yurose.jpg" alt="About Fleuréa Florist" class="rounded-2xl border border-neutral-800 shadow-2xl object-cover w-full h-[400px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. FITUR / DAFTAR BOUQUET (GRID SYSTEM) -->
+    <section id="koleksi" class="py-20 px-6 bg-neutral-900 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-rose-400 text-xs uppercase tracking-widest font-semibold block mb-2">Koleksi Terlaris</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-white">Rangkaian Bunga Favorit</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden group hover:border-rose-900/50 transition-all">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="pink serenity.jpg" alt="Pink Serenity" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-1">Pink Serenity</h3>
+                        <p class="text-rose-300 font-semibold text-sm mb-4">Rp 250.000</p>
+                        <a href="#pesan" class="block w-full text-center bg-neutral-900 hover:bg-rose-300 hover:text-neutral-950 text-neutral-300 text-xs font-semibold uppercase tracking-wider py-2.5 rounded-lg border border-neutral-800 transition-all">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden group hover:border-rose-900/50 transition-all">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="white lily.jpg" alt="White Lily Elegance" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-1">White Lily Elegance</h3>
+                        <p class="text-rose-300 font-semibold text-sm mb-4">Rp 335.000</p>
+                        <a href="#pesan" class="block w-full text-center bg-neutral-900 hover:bg-rose-300 hover:text-neutral-950 text-neutral-300 text-xs font-semibold uppercase tracking-wider py-2.5 rounded-lg border border-neutral-800 transition-all">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden group hover:border-rose-900/50 transition-all">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="sweet harmony.jpg" alt="Sweet Harmony" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-1">Sweet Harmony</h3>
+                        <p class="text-rose-300 font-semibold text-sm mb-4">Rp 300.000</p>
+                        <a href="#pesan" class="block w-full text-center bg-neutral-900 hover:bg-rose-300 hover:text-neutral-950 text-neutral-300 text-xs font-semibold uppercase tracking-wider py-2.5 rounded-lg border border-neutral-800 transition-all">Pesan Sekarang</a>
+                    </div>
+                </div>
+
+                <div class="bg-neutral-950 border border-neutral-800 rounded-2xl overflow-hidden group hover:border-rose-900/50 transition-all">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="passion.jpg" alt="Red Velvet Passion" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                    <div class="p-5">
+                        <h3 class="font-serif text-xl font-bold text-white mb-1">Red Velvet Passion</h3>
+                        <p class="text-rose-300 font-semibold text-sm mb-4">Rp 450.000</p>
+                        <a href="#pesan" class="block w-full text-center bg-neutral-900 hover:bg-rose-300 hover:text-neutral-950 text-neutral-300 text-xs font-semibold uppercase tracking-wider py-2.5 rounded-lg border border-neutral-800 transition-all">Pesan Sekarang</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. MAKNA BUNGA (CARD FORMAT) -->
+    <section id="makna" class="py-20 px-6 bg-neutral-950 border-b border-neutral-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center max-w-2xl mx-auto mb-14">
+                <span class="text-rose-400 text-xs uppercase tracking-widest font-semibold block mb-2">Simbolisme & Filosofi</span>
+                <h2 class="font-serif text-3xl md:text-5xl font-bold text-white">Makna Setiap Bunga</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-rose-800 transition-all flex flex-col">
+                    <img src="bunga matahari.jpg" alt="Pink Rose" class="w-full h-48 object-cover rounded-xl mb-6">
+                    <h3 class="font-serif text-2xl font-bold text-rose-300 mb-2">Helianthus Annuus</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-6 flex-grow">
+                        Melambangkan persahabatan, keberuntungan, perdamaian, dan cinta yang tak berbalas. Pilihan sempurna untuk mengungkapkan rasa terima kasih dan kebahagiaan.
+                    </p>
+                    <a href="#pesan" class="text-rose-400 hover:text-rose-300 text-xs uppercase tracking-wider font-semibold inline-flex items-center gap-2">
+                        Pilih Bunga Ini
+                    </a>
+                </div>
+
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-rose-800 transition-all flex flex-col">
+                    <img src="lili putih.jpg" alt="White Lily" class="w-full h-48 object-cover rounded-xl mb-6">
+                    <h3 class="font-serif text-2xl font-bold text-rose-300 mb-2">Lilium Candidum</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-6 flex-grow">
+                        Melambangkan kemurnian, keanggunan, ketulusan niat, harapan, dan cinta yang tulus. Pilihan sempurna untuk pernikahan atau momen sakral.
+                    </p>
+                    <a href="#pesan" class="text-rose-400 hover:text-rose-300 text-xs uppercase tracking-wider font-semibold inline-flex items-center gap-2">
+                        Pilih Bunga Ini
+                    </a>
+                </div>
+
+                <div class="bg-neutral-900 border border-neutral-800 rounded-2xl p-6 hover:border-rose-800 transition-all flex flex-col">
+                    <img src="mawar merah.jpg" alt="Red Rose" class="w-full h-48 object-cover rounded-xl mb-6">
+                    <h3 class="font-serif text-2xl font-bold text-rose-300 mb-2">Rosa Rubiginosa</h3>
+                    <p class="text-neutral-400 text-sm leading-relaxed mb-6 flex-grow">
+                        Melambangkan keindahan, rasa hormat, cinta mendalam, hasrat, dan komitmen sejati. Pilihan klasik terbaik untuk mengungkapkan perasaan.
+                    </p>
+                    <a href="#pesan" class="text-rose-400 hover:text-rose-300 text-xs uppercase tracking-wider font-semibold inline-flex items-center gap-2">
+                        Pilih Bunga Ini
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. FORM PEMESANAN / CONTACT -->
+    <section id="pesan" class="py-20 px-6 bg-neutral-900 border-b border-neutral-800">
+        <div class="max-w-3xl mx-auto bg-neutral-950 border border-neutral-800 rounded-2xl p-8 md:p-10">
+            <div class="text-center mb-8">
+                <span class="text-rose-400 text-xs uppercase tracking-widest font-semibold block mb-2">Formulir Pesanan</span>
+                <h2 class="font-serif text-3xl font-bold text-white">Pesan Karangan Bunga</h2>
+            </div>
+
+            <!-- Form -->
+            <form action="#" class="space-y-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-neutral-400 mb-2">Nama Lengkap</label>
+                        <input type="text" placeholder="Masukkan nama Anda" class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-rose-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-neutral-400 mb-2">Nomor WhatsApp</label>
+                        <input type="tel" placeholder="08xxxxxxxxxx" class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-rose-400">
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-neutral-400 mb-2">Tanggal Pengiriman</label>
+                        <input type="date" class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-rose-400">
+                    </div>
+                    <div>
+                        <label class="block text-xs uppercase tracking-wider text-neutral-400 mb-2">Pilih Jenis Bouquet</label>
+                        <select class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-sm text-neutral-300 focus:outline-none focus:border-rose-400">
+                            <option value="">-- Pilih Rangkaian --</option>
+                            <option value="pink">Pink Serenity</option>
+                            <option value="lily">White Lily Elegance</option>
+                            <option value="sweet">Sweet Harmony</option>
+                            <option value="red">Red Velvet Passion</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-neutral-400 mb-2">Pesan Kartu Ucapan</label>
+                    <textarea rows="3" placeholder="Tuliskan ucapan kustom Anda di sini..." class="w-full bg-neutral-900 border border-neutral-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-rose-400"></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-xs uppercase tracking-wider text-neutral-400 mb-2">Upload Foto Referensi (Opsional)</label>
+                    <input type="file" class="w-full text-xs text-neutral-400 file:mr-4 file:py-2.5 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-semibold file:bg-neutral-800 file:text-rose-300 hover:file:bg-neutral-700">
+                </div>
+
+                <button type="submit" class="w-full bg-rose-300 hover:bg-rose-400 text-neutral-950 font-semibold text-xs uppercase tracking-wider py-4 rounded-xl transition-all">
+                    Kirim Pesanan Sekarang
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- 7. FOOTER KONTAK -->
+    <footer class="bg-neutral-950 py-16 px-6 border-t border-neutral-900 text-sm">
+        <div class="max-w-7l mx-auto flex flex-col md:flex-row justify-between gap-10 mb-12">
+            <div class="ml-10">
+                <a href="#" class="font-serif text-2xl tracking-widest text-rose-300 font-semibold uppercase block mb-4">Yurose</a>
+                <p class="text-neutral-400 text-sm leading-relaxed max-w-xs mb-4">
+                    Atelier bunga premium yang melayani pembuatan bouquet kustom dan dekorasi acara spesial dengan keindahan bunga terbaik.
+                </p>
+            </div>
+
+            <!-- Kontak Toko -->
+            <div class="mr-10">
+                <h4 class="text-white text-xs uppercase tracking-widest font-semibold mb-4">Kontak Kami</h4>
+                <div class="space-y-3 text-xs text-neutral-400">
+                    <p class="flex items-center gap-2">📍 Jl. Nanami Ganteng Bangetzz No. 4, Konohagakure</p>
+                    <p class="flex items-center gap-2">📞 +62 812 3456 7890</p>
+                    <p class="flex items-center gap-2">✉️ contact@Yurose.com</p>
+                    <p class="flex items-center gap-2">📷 @Yurose.florist</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="max-w-7xl mx-auto pt-8 border-t border-neutral-900 text-center text-neutral-400 text-xs">
+            <p>&copy; 2026 Yurose Floral Atelier. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
