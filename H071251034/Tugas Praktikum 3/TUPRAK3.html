@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumah Risoles</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400..800;1,9..144,400..800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-yellow-50 text-stone-800 font-['Plus_Jakarta_Sans']">
+
+    <!-- navbar -->
+    <nav class="sticky top-0 z-50 bg-yellow-50/90 backdrop-blur border-b border-amber-200">
+        <div class="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+            <a href="#beranda" class="flex items-center gap-2 font-['Unbounded'] font-bold text-xl text-red-700 rounded">
+                <img src="images2/logo.png" alt="Logo Rumah Risoles" class="h-9 w-auto object-contain">
+                Rumah Risoles
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 text-sm font-semibold">
+                <a href="#beranda" class="hover:text-red-700 transition-colors">Beranda</a>
+                <a href="#tentang" class="hover:text-red-700 transition-colors">Tentang</a>
+                <a href="#menu" class="hover:text-red-700 transition-colors">Menu</a>
+                <a href="#testimoni" class="hover:text-red-700 transition-colors">Testimoni</a>
+                <a href="#kontak" class="hover:text-red-700 transition-colors">Kontak</a>
+            </div>
+
+            <a href="#pesan" class="hidden md:inline-block bg-red-600 text-yellow-50 px-5 py-2 rounded-full text-sm font-bold hover:bg-red-700 transition-colors">
+                Pesan Sekarang
+            </a>
+
+            <!-- navbar detail -->
+            <details class="md:hidden relative group">
+                <summary class="cursor-pointer bg-red-600 text-yellow-50 px-4 py-2 rounded-full text-sm font-bold">
+                    Menu
+                </summary>
+                <div class="absolute right-0 mt-3 w-52 bg-white rounded-2xl shadow-xl border border-amber-200 p-3 flex flex-col text-sm font-semibold">
+                    <a href="#beranda" class="px-3 py-2 rounded-lg hover:bg-amber-100">Beranda</a>
+                    <a href="#tentang" class="px-3 py-2 rounded-lg hover:bg-amber-100">Tentang</a>
+                    <a href="#menu" class="px-3 py-2 rounded-lg hover:bg-amber-100">Menu</a>
+                    <a href="#testimoni" class="px-3 py-2 rounded-lg hover:bg-amber-100">Testimoni</a>
+                    <a href="#kontak" class="px-3 py-2 rounded-lg hover:bg-amber-100">Kontak</a>
+                    <a href="#pesan" class="mt-2 text-center bg-red-600 text-yellow-50 px-3 py-2 rounded-full">Pesan Sekarang</a>
+                </div>
+            </details>
+        </div>
+    </nav>
+
+    <!--header-->
+    <header class="relative bg-[url('images2/bg.jpg')] bg-cover bg-center bg-stone-900">
+        <div class="absolute inset-0 bg-linear-to-t from-stone-950/85 via-stone-900/50 to-stone-900/30"></div>
+        <div class="relative max-w-6xl mx-auto px-6 py-24 md:py-32 text-center md:text-left">
+            <h1 class="font-['Unbounded'] font-extrabold text-4xl md:text-6xl text-yellow-50 leading-tight">
+                Rumah Risoles
+            </h1>
+            <p class="mt-4 max-w-xl font-['Fraunces'] italic text-xl md:text-2xl text-amber-200 mx-auto md:mx-0">
+                Renyah di luar, penuh isian di dalam. Dibuat segar setiap hari sejak 2017.
+            </p>
+        </div>
+    </header>
+
+    <!--beranda-->
+    <section id="beranda" class="scroll-mt-16 max-w-6xl mx-auto px-6 py-16 md:py-24">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="font-['Fraunces'] font-bold text-4xl md:text-5xl leading-tight text-stone-900">
+                    Lagi cari camilan? Jawabannya Rumah Risol aja! 
+                </h2>
+                <p class="mt-5 text-lg text-stone-600 leading-relaxed max-w-md">
+                    Risol dengan kulit luar yang renyah fan garing sempurna, berisi isian padat,lembut,dan penuh rasa. Cocok dijadikan cemilan kapan saja baik untuk teman santai maupun hidangan keluarga.
+                </p>
+                <div class="mt-8 flex flex-wrap gap-4">
+                    <a href="#pesan" class="bg-red-600 text-yellow-50 px-7 py-3.5 rounded-full font-bold shadow-lg shadow-red-600/30 hover:bg-red-700 transition-colors ">
+                        Pesan Sekarang
+                    </a>
+                    <a href="#menu" class="border-2 border-stone-800 text-stone-800 px-7 py-3.5 rounded-full font-bold hover:bg-stone-800 hover:text-yellow-50 transition-colors ">
+                        Lihat Menu
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 h-96">
+                <div class="row-span-2 rounded-3xl bg-[url('images2/beranda2.png')] bg-cover bg-center bg-amber-300 flex items-end p-4">
+
+                </div>
+                <div class="rounded-3xl bg-[url('images2/beranda3.png')] bg-cover bg-center bg-red-400 flex items-end p-4">
+                </div>
+                <div class="rounded-3xl bg-[url('images2/beranda4.png')] bg-cover bg-center bg-stone-700 flex items-end p-4">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--tentang-->
+    <section id="tentang" class="scroll-mt-16 bg-red-700 text-yellow-50">
+        <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-5 gap-12 items-center">
+            <div class="md:col-span-3">
+                <h2 class="font-['Fraunces'] font-bold text-3xl md:text-4xl">Tentang Kami</h2>
+                <p class="mt-5 leading-relaxed text-yellow-100 max-w-xl">
+                    Rumah Risoles adalah usaha kuliner yang berdiri sejak 2017 di Makassar. Kami mulai dari satu dapur kecil dengan satu tujuan: membuat risol yang kulitnya tetap garing dengan isian yang berlimpah.
+                </p>
+                <p class="mt-4 leading-relaxed text-yellow-100 max-w-xl">
+                    Kini Rumah Risoles hadir di empat cabang di Makassar dan satu cabang di Palopo. Semua risol dibuat dari bahan pilihan, digoreng saat dipesan, dan siap jadi teman ngopi, bekal sekolah, atau suguhan rapat.
+                </p>
+            </div>
+            <div class="md:col-span-2 grid grid-cols-2 gap-4 text-center">
+                <div class="bg-yellow-50 text-red-700 rounded-2xl p-5">
+                    <p class="font-['Unbounded'] font-bold text-3xl">2017</p>
+                    <p class="text-sm font-medium mt-1 text-stone-600">Mulai berjualan</p>
+                </div>
+                <div class="bg-yellow-50 text-red-700 rounded-2xl p-5">
+                    <p class="font-['Unbounded'] font-bold text-3xl">5</p>
+                    <p class="text-sm font-medium mt-1 text-stone-600">Cabang</p>
+                </div>
+                <div class="bg-yellow-50 text-red-700 rounded-2xl p-5">
+                    <p class="font-['Unbounded'] font-bold text-3xl">5</p>
+                    <p class="text-sm font-medium mt-1 text-stone-600">Varian rasa</p>
+                </div>
+                <div class="bg-amber-400 text-stone-900 rounded-2xl p-5">
+                    <p class="font-['Unbounded'] font-bold text-3xl">2</p>
+                    <p class="text-sm font-medium mt-1">Kota</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--menu-->
+    <section id="menu" class="scroll-mt-16 max-w-6xl mx-auto px-6 py-20">
+        <div class="max-w-2xl">
+            <h2 class="font-['Fraunces'] font-bold text-3xl md:text-4xl text-stone-900">Lima rasa andalan</h2>
+            <p class="mt-3 text-stone-600 leading-relaxed">Pilih yang gurih, pedas, atau manis. Semuanya digoreng sampai keemasan.</p>
+        </div>
+
+        <div class="mt-10 -mx-6">
+            <div tabindex="0" aria-label="Daftar menu, geser ke samping untuk melihat lebih banyak" class="flex gap-6 overflow-x-auto snap-x snap-mandatory scroll-px-6 px-6 pb-6 rounded-3xl">
+                <article class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-3xl overflow-hidden border border-amber-200 hover:shadow-xl transition-shadow">
+                    <div class="h-44 bg-[url('images2/risolMayo.png')] bg-cover bg-center bg-amber-300"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Unbounded'] font-semibold text-lg text-red-700">Risol Mayo<br>Rp 4.000</h3>
+                        <p class="mt-2 text-stone-600 text-sm leading-relaxed">Isi telur, ayam, dan mayones yang lumer di dalam kulit yang renyah.</p>
+                    </div>
+                </article>
+                <article class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-3xl overflow-hidden border border-amber-200 hover:shadow-xl transition-shadow">
+                    <div class="h-44 bg-[url('images2/risolpedas.png')] bg-cover bg-center bg-red-400"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Unbounded'] font-semibold text-lg text-red-700">Risol Mayo Pedas<br>Rp 4.000</h3>
+                        <p class="mt-2 text-stone-600 text-sm leading-relaxed">Isi telur, ayam, saus sambal dan mayones yang lumer di dalam kulit yang renyah.</p>
+                    </div>
+                </article>
+                <article class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-3xl overflow-hidden border border-amber-200 hover:shadow-xl transition-shadow">
+                    <div class="h-44 bg-[url('images2/risolsosis.png')] bg-cover bg-center bg-stone-700"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Unbounded'] font-semibold text-lg text-red-700">Risol Sosis <br>Rp 4.000</h3>
+                        <p class="mt-2 text-stone-600 text-sm leading-relaxed">Isian sosis dengan saus yang melimpah lembut di dalam, gurih dan creamy di setiap gigitan.</p>
+                    </div>
+                </article>
+                <article class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-3xl overflow-hidden border border-amber-200 hover:shadow-xl transition-shadow">
+                    <div class="h-44 bg-[url('images2/risolSmoke.png')] bg-cover bg-center bg-yellow-400"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Unbounded'] font-semibold text-lg text-red-700">Risol Smoke Beef<br>Rp 5.000</h3>
+                        <p class="mt-2 text-stone-600 text-sm leading-relaxed">Irisan smoke beef gurih dengan keju, cocok untuk yang suka rasa lebih tegas.</p>
+                    </div>
+                </article>
+                <article class="snap-start shrink-0 w-72 md:w-80 bg-white rounded-3xl overflow-hidden border border-amber-200 hover:shadow-xl transition-shadow">
+                    <div class="h-44 bg-[url('images2/RisolCoklat.png')] bg-cover bg-center bg-orange-500"></div>
+                    <div class="p-6">
+                        <h3 class="font-['Unbounded'] font-semibold text-lg text-red-700">Risol Coklat<br> Rp 5.000</h3>
+                        <p class="mt-2 text-stone-600 text-sm leading-relaxed">Coklat leleh hangat di dalam, pas untuk penutup atau camilan sore.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <ul class="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6 text-sm font-semibold text-stone-700">
+            <li class="border-l-4 border-red-600 pl-4">Digoreng saat dipesan, selalu hangat</li>
+            <li class="border-l-4 border-amber-400 pl-4">Bisa pesan dalam jumlah besar untuk acara</li>
+            <li class="border-l-4 border-stone-800 pl-4">Tersedia di 5 cabang di Makassar dan Palopo</li>
+        </ul>
+    </section>
+
+    <!--testimoni-->
+    <section id="testimoni" class="scroll-mt-16 bg-amber-100">
+        <div class="max-w-6xl mx-auto px-6 py-20">
+            <h2 class="font-['Fraunces'] font-bold text-3xl md:text-4xl text-stone-900">Kata pelanggan</h2>
+
+            <div class="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+                <figure class="bg-white rounded-3xl p-6 border border-amber-200">
+                    <class="text-stone-700 leading-relaxed">
+                        Kulitnya masih garing walau dibawa pulang setengah jam. Isian mayonya banyak.
+                    <figcaption class="mt-5 flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-full bg-red-600 text-yellow-50 font-bold flex items-center justify-center">N</span>
+                        <span class="text-sm"><span class="block font-bold">Nurul</span><span class="text-stone-500">Mahasiswa, Makassar</span></span>
+                    </figcaption>
+                </figure>
+                <figure class="bg-white rounded-3xl p-6 border border-amber-200">
+                    <class="text-stone-700 leading-relaxed">
+                        Pesan 100 biji untuk rapat kantor, datang tepat waktu dan semua habis.
+                    <figcaption class="mt-5 flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-full bg-amber-500 text-stone-900 font-bold flex items-center justify-center">R</span>
+                        <span class="text-sm"><span class="block font-bold">Reza</span><span class="text-stone-500">Karyawan swasta</span></span>
+                    </figcaption>
+                </figure>
+                <figure class="bg-white rounded-3xl p-6 border border-amber-200">
+                    <class="text-stone-700 leading-relaxed">
+                        Anak saya minta risol coklat tiap akhir pekan. Manisnya pas, tidak berlebihan.
+                    <figcaption class="mt-5 flex items-center gap-3">
+                        <span class="w-10 h-10 rounded-full bg-stone-800 text-yellow-50 font-bold flex items-center justify-center">S</span>
+                        <span class="text-sm"><span class="block font-bold">Bu Sari</span><span class="text-stone-500">Ibu rumah tangga, Palopo</span></span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+    </section>
+
+    <!--pemesanan-->
+    <section id="pesan" class="scroll-mt-16 max-w-6xl mx-auto px-6 py-20">
+        <div class="flex justify-center">
+            <div>
+                <h2 class="font-['Fraunces'] text-center font-center font-bold text-3xl md:text-4xl text-stone-900">Pesan risol favoritmu</h2>
+                <p class="text-center mt-4 text-stone-600 leading-relaxed max-w-md">
+                    Isi formulir di samping, lalu kami hubungi kamu untuk konfirmasi pesanan dan waktu pengambilan.
+                </p>
+            </div>
+        </div>
+        <div class="mt-10">
+            <form action="#" class="bg-white rounded-3xl border border-amber-200 shadow-lg p-6 md:p-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
+                <div class="sm:col-span-2">
+                    <label for="nama" class="block text-sm font-semibold mb-1">Nama lengkap</label>
+                    <input id="nama" type="text" placeholder="Contoh: Aura Resky" required class="w-full rounded-xl border border-stone-300 px-4 py-2.5">
+                </div>
+                <div>
+                    <label for="wa" class="block text-sm font-semibold mb-1">Nomor WhatsApp</label>
+                    <input id="wa" type="tel" placeholder="08xxxxxxxxxx" required class="w-full rounded-xl border border-stone-300 px-4 py-2.5">
+                </div>
+                <div>
+                    <label for="cabang" class="block text-sm font-semibold mb-1">Cabang</label>
+                    <select id="cabang" class="w-full rounded-xl border border-stone-300 px-4 py-2.5 bg-white">
+                        <option>Makassar - Jl.Andi Tonro</option>
+                        <option>Makassar - Jl.Tamangapa Raya</option>
+                        <option>Makassar - Jl.Antang Raya</option>
+                        <option>Makassar - Jl.Maccini Raya</option>
+                        <option>Palopo</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="varian" class="block text-sm font-semibold mb-1">Varian</label>
+                    <select id="varian" class="w-full rounded-xl border border-stone-300 px-4 py-2.5 bg-white focus:outline-2 focus:outline-red-600">
+                        <option>Risol Mayo</option>
+                        <option>Risol Smoke Beef</option>
+                        <option>Risol Mayo Pedas</option>
+                        <option>Risol sosis</option>                        
+                        <option>Risol Coklat</option>
+                        
+                    </select>
+                </div>
+                <div>
+                    <label for="jumlah" class="block text-sm font-semibold mb-1">Jumlah</label>
+                    <input id="jumlah" type="number" min="1" value="1" class="w-full rounded-xl border border-stone-300 px-4 py-2.5 focus:outline-2 focus:outline-red-600">
+                </div>
+                <div class="sm:col-span-2">
+                    <label for="catatan" class="block text-sm font-semibold mb-1">Catatan</label>
+                    <textarea id="catatan" rows="3" class="w-full rounded-xl border border-stone-300 px-4 py-2.5 focus:outline-2 focus:outline-red-600"></textarea>
+                </div>
+                <button type="submit" class="sm:col-span-2 bg-red-600 text-yellow-50 py-3 rounded-full font-bold hover:bg-red-700 transition-colors ">
+                    Kirim pesanan
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!--footer-->
+    <footer id="kontak" class="scroll-mt-16 bg-stone-900 text-stone-300">
+        <div class="max-w-6xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div>
+                <p class="font-['Unbounded'] font-bold text-xl text-yellow-50">Rumah Risoles</p>
+                <p class="mt-3 text-sm leading-relaxed max-w-xs">Risol segar setiap hari sejak 2017. Empat cabang di Makassar, satu cabang di Palopo.</p>
+            </div>
+            <div>
+                <p class="font-bold text-yellow-50">Kontak</p>
+                <ul class="mt-3 space-y-2 text-sm">
+                    <li>WhatsApp: 0813-5550-6500</li>
+                    <li>Email: Rumah.risoles11@gmail.com</li>
+                    <li>Buka setiap hari, 08.00 - 22.00 WITA</li>
+                </ul>
+            </div>
+            <div>
+                <p class="font-bold text-yellow-50">Ikuti kami</p>
+                <ul class="mt-3 space-y-2 text-sm">
+                    <li><a href="https://www.instagram.com/rumahrisoles.mks?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" class="hover:text-amber-300 transition-colors" target="_blank">Instagram @rumahrisoles.mks</a></li>
+                    <li><a href="https://www.tiktok.com/@rumah.risol.makas?_r=1&_t=ZS-9A6xeaf4eCT" class="hover:text-amber-300 transition-colors" target="_blank">TikTok @rumah.risol.makas</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-stone-700">
+            <div class="max-w-6xl mx-auto px-6 py-5 flex flex-col sm:flex-row gap-2 justify-between text-xs text-stone-400">
+                <p>&copy; 2026 Rumah Risoles. Hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
