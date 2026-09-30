@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NatureTrip | Jelajahi Indonesia</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <nav class="bg-white px-6 py-4 flex justify-between items-center shadow">
+        <h1 class="text-2xl font-bold text-green-700">
+            NatureTrip
+        </h1>
+
+        <div class="space-x-5 hidden md:block">
+            <a href="#home" class="hover:text-green-600">Beranda</a>
+            <a href="#tentang" class="hover:text-green-600">Tentang</a>
+            <a href="#destinasi" class="hover:text-green-600">Destinasi</a>
+            <a href="#kontak" class="hover:text-green-600">Kontak</a>
+        </div>
+    </nav>
+
+
+   <!-- Hero -->
+<section id="home"
+    class="relative h-[600px] bg-cover bg-center flex items-center px-8 md:px-20"
+    style="background-image: url('https://www.tourmyindia.com/blog//wp-content/uploads/2018/05/PADAR-ISLAND.jpg');">
+
+    <div class="absolute inset-0 bg-black/30"></div>
+
+    <div class="relative z-10 max-w-xl text-white">
+
+        <p class="font-semibold mb-3">
+            JELAJAHI INDONESIA
+        </p>
+
+        <h2 class="text-5xl font-bold mb-5">
+            Temukan Keindahan Nusantara
+        </h2>
+
+        <p class="mb-7">
+            Temukan berbagai destinasi menarik di Indonesia
+            dan ciptakan pengalaman perjalanan yang tak terlupakan.
+        </p>
+
+        <a href="#destinasi"
+            class="bg-green-600 px-6 py-3 rounded-full hover:bg-green-700">
+            Mulai Menjelajah
+        </a>
+
+    </div>
+
+</section>
+
+
+    <!-- Tentang -->
+    <section id="tentang" class="py-16 px-6 text-center">
+
+        <h2 class="text-3xl font-bold mb-4">
+            Tentang NatureTrip
+        </h2>
+
+        <p class="max-w-2xl mx-auto text-gray-600">
+            NatureTrip adalah platform sederhana untuk menemukan
+            inspirasi perjalanan dan destinasi wisata di Indonesia.
+        </p>
+
+    </section>
+
+
+    <!-- Destinasi -->
+    <section id="destinasi" class="py-16 px-6 bg-white">
+
+        <h2 class="text-3xl font-bold text-center mb-10">
+            Destinasi Pilihan
+        </h2>
+
+        <!-- Grid -->
+        <div class="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+            <div class="bg-green-50 p-6 rounded-xl text-center">
+                <div class="text-4xl mb-3">🏝️</div>
+                <h3 class="text-xl font-bold mb-2">
+                    Raja Ampat
+                </h3>
+                <p class="text-gray-600">
+                    Nikmati keindahan laut dan pulau-pulau Papua.
+                </p>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl text-center">
+                <div class="text-4xl mb-3">⛰️</div>
+                <h3 class="text-xl font-bold mb-2">
+                    Bromo
+                </h3>
+                <p class="text-gray-600">
+                    Saksikan pesona pegunungan dan matahari terbit.
+                </p>
+            </div>
+
+            <div class="bg-green-50 p-6 rounded-xl text-center">
+                <div class="text-4xl mb-3">🌊</div>
+                <h3 class="text-xl font-bold mb-2">
+                    Bali
+                </h3>
+                <p class="text-gray-600">
+                    Jelajahi pantai, budaya, dan keindahan Pulau Dewata.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-16 px-6">
+
+        <div class="max-w-lg mx-auto">
+
+            <h2 class="text-3xl font-bold text-center mb-3">
+                Hubungi Kami
+            </h2>
+
+            <p class="text-center text-gray-600 mb-7">
+                Ingin mendapatkan informasi perjalanan?
+            </p>
+
+            <form class="space-y-4">
+
+                <input
+                    type="text"
+                    placeholder="Nama"
+                    class="w-full p-3 border rounded-lg">
+
+                <input
+                    type="email"
+                    placeholder="Email"
+                    class="w-full p-3 border rounded-lg">
+
+                <textarea
+                    placeholder="Pesan"
+                    class="w-full p-3 border rounded-lg h-28">
+                </textarea>
+
+                <button
+                    class="w-full bg-green-600 text-white py-3 rounded-lg
+                    hover:bg-green-700">
+                    Kirim Pesan
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-5">
+
+        <p>
+            © 2026 NatureTrip | Jelajahi Indonesia
+        </p>
+
+    </footer>
+
+</body>
+</html>
