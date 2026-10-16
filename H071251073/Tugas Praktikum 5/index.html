@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pantau Tugas Tim</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 text-slate-800 min-h-screen">
+  <main class="max-w-5xl mx-auto p-4 md:p-8">
+    <header class="mb-6">
+      <h1 class="text-2xl md:text-3xl font-bold">Pantau Tugas Tim</h1>
+      <p class="text-slate-500">Klik nama anggota untuk melihat tugasnya.</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Daftar anggota -->
+      <section class="bg-white rounded-xl shadow p-4 md:col-span-1">
+        <h2 class="text-lg font-semibold mb-3">Anggota Tim</h2>
+        <p id="members-loading" class="text-slate-500 hidden"></p>
+        <p id="members-error" class="text-red-600 text-sm hidden"></p>
+        <div id="members-list" class="flex flex-col gap-2"></div>
+      </section>
+
+      <!-- Tugas anggota -->
+      <section class="bg-white rounded-xl shadow p-4 md:col-span-2">
+        <h2 id="tasks-title" class="text-lg font-semibold">Tugas</h2>
+        <p id="tasks-placeholder" class="text-slate-500 mt-2">Pilih salah satu anggota di sebelah kiri.</p>
+        <p id="tasks-loading" class="text-slate-500 mt-2 hidden"></p>
+        <p id="tasks-error" class="text-red-600 text-sm mt-2 hidden"></p>
+
+        <div id="tasks-panel" class="hidden mt-3">
+          <p id="progress" class="text-sm font-medium text-blue-700 mb-3"></p>
+
+          <input
+            id="search-input"
+            type="text"
+            placeholder="Cari tugas berdasarkan judul..."
+            class="w-full border border-slate-300 rounded-lg px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+
+          <form id="task-form" class="flex flex-col sm:flex-row gap-2 mb-1" novalidate>
+            <input
+              id="task-input"
+              type="text"
+              placeholder="Judul tugas baru (min. 5 karakter)"
+              class="flex-1 border border-slate-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+            />
+            <button
+              id="task-submit"
+              type="submit"
+              class="bg-blue-600 hover:bg-blue-700 disabled:opacity-60 text-white font-medium rounded-lg px-4 py-2"
+            >Simpan</button>
+          </form>
+          <p id="form-error" class="text-red-600 text-sm mb-2 hidden"></p>
+          <p id="notif" class="bg-green-100 text-green-800 text-sm rounded-lg px-3 py-2 mb-2 hidden"></p>
+
+          <p id="no-match" class="text-slate-500 italic my-3 hidden"></p>
+          <ul id="tasks-list" class="flex flex-col gap-2 mt-3"></ul>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
