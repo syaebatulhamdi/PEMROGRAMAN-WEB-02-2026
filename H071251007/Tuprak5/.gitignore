@@ -1,0 +1,331 @@
+
+# ==========================================
+# 1. SISTEM OPERASI
+# ==========================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100/
+.Trashes/
+.fseventsd/
+.VolumeIcon.icns
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ==========================================
+# 2. EDITOR DAN IDE
+# ==========================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains IDE
+.idea/
+*.iml
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Sublime Text
+*.sublime-workspace
+
+# Vim
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+Session.vim
+.netrwhist
+
+
+# ==========================================
+# 3. LOG DAN FILE DEBUG
+# ==========================================
+
+*.log
+logs/
+log/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+debug.log*
+*.stackdump
+
+
+# ==========================================
+# 4. FILE SEMENTARA DAN CACHE
+# ==========================================
+
+*.tmp
+*.temp
+*.bak
+*.old
+*.orig
+*.swp
+*.swo
+*.cache
+.cache/
+temp/
+tmp/
+
+
+# ==========================================
+# 5. ENVIRONMENT DAN RAHASIA
+# ==========================================
+
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Private keys dan sertifikat
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+# Kredensial
+secrets.json
+credentials.json
+service-account*.json
+
+
+# ==========================================
+# 6. DEPENDENCIES
+# ==========================================
+
+# Node.js
+node_modules/
+jspm_packages/
+bower_components/
+
+# PHP / Composer
+vendor/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.python-version
+venv/
+.venv/
+env/
+ENV/
+pip-wheel-metadata/
+
+# Ruby
+.bundle/
+vendor/bundle/
+
+# Java
+.gradle/
+target/
+
+# Go
+vendor/
+
+
+# ==========================================
+# 7. BUILD DAN OUTPUT
+# ==========================================
+
+dist/
+build/
+out/
+coverage/
+.nyc_output/
+*.tsbuildinfo
+
+# Next.js
+.next/
+out/
+
+# Nuxt.js
+.nuxt/
+.output/
+
+# Vite
+# Folder dist/ sudah diabaikan di bagian build
+
+# Angular
+.angular/
+*.angular/
+
+# React Native
+.expo/
+web-build/
+
+# SvelteKit
+.svelte-kit/
+
+
+# ==========================================
+# 8. FRAMEWORK PHP / LARAVEL
+# ==========================================
+
+# Laravel
+/storage/*.key
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*.php
+
+# Jangan abaikan folder storage secara keseluruhan,
+# karena mungkin berisi file penting yang diperlukan.
+
+# Composer
+composer.phar
+
+
+# ==========================================
+# 9. DATABASE DAN BACKUP
+# ==========================================
+
+*.sqlite
+*.sqlite3
+*.db
+*.sql~
+*.dump
+*.bak
+*.backup
+
+# Catatan:
+# *.sql tidak diabaikan secara default karena
+# dump atau migration tertentu mungkin diperlukan.
+
+
+# ==========================================
+# 10. PYTHON / DATA SCIENCE
+# ==========================================
+
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.nox/
+htmlcov/
+site-packages/
+
+# Jupyter
+.profile/
+ipython_config.py
+
+
+# ==========================================
+# 11. DOCKER DAN INFRASTRUKTUR
+# ==========================================
+
+# File override lokal
+docker-compose.override.yml
+
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+crash.*.log
+*.tfvars
+*.tfvars.json
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+
+# ==========================================
+# 12. FILE ARSIP DAN HASIL DOWNLOAD
+# ==========================================
+
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+*.iso
+*.dmg
+*.exe
+*.msi
+*.download
+*.part
+
+
+# ==========================================
+# 13. FILE MEDIA DAN HASIL GENERATE
+# ==========================================
+
+# Aktifkan jika file media tidak perlu disimpan di Git
+# *.mp4
+# *.mov
+# *.psd
+# *.ai
+
+# File hasil generate
+generated/
+artifacts/
+
+
+# ==========================================
+# 14. TESTING
+# ==========================================
+
+test-results/
+playwright-report/
+blob-report/
+.npm/
+.eslintcache
+
+
+# ==========================================
+# 15. FILE KONFIGURASI LOKAL
+# ==========================================
+
+*.local
+*.local.*
+.local/
+config.local.*
+settings.local.*
+
+
+# ==========================================
+# 16. FILE LAINNYA
+# ==========================================
+
+.DS_Store?
+*.orig
+*.rej
+*.pid
+*.seed
+*.tgz
+*.sw?
+*.sublime-project
+*.code-workspace
+
+# Folder Git tidak perlu ditulis:
+# .git/
