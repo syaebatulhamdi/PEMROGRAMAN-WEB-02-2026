@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pantau Tugas Tim</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-white min-h-screen">
+    <div class="max-w-3xl mx-auto p-4 md:p-8">
+      <h1 class="text-2xl font-mono text-[#FFA5D6] mb-1">Pantau Tugas Tim</h1>
+      <p class="text-[#ECD2EO] mb-6">Klik nama anggota untuk melihat tugasnya.</p>
+
+      <!-- Daftar anggota -->
+      <section class="bg-[#FFD6EE] rounded-lg shadow p-4 mb-6">
+        <h2 class="font-semibold text-gray-700 mb-3">Anggota Tim</h2>
+        <p id="statusAnggota" class="text-gray-500"></p>
+        <p id="errorAnggota" class="text-red-600"></p>
+        <div id="daftarAnggota" class="flex flex-wrap gap-2"></div>
+      </section>
+
+      <!-- Tugas anggota -->
+      <section id="bagianTugas" class="bg-[#FFD6EE] rounded-lg shadow p-4 hidden">
+        <h2 id="judulTugas" class="text-lg font-semibold text-gray-800 mb-3">Tugas</h2>
+        <p id="statusTugas" class="text-gray-500"></p>
+        <p id="errorTugas" class="text-red-600"></p>
+
+        <div id="areaKonten" class="hidden">
+          <!-- Pencarian tugas -->
+          <input
+            id="cariTugas"
+            type="text"
+            placeholder="Cari tugas berdasarkan judul..."
+            class="w-full border border-gray-300 rounded px-3 py-2 mb-3 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          />
+
+          <!-- Ringkasan progres -->
+          <p id="ringkasan" class="font-medium text-[#AZABDE] mb-3"></p>
+
+          <!-- Form buat tambah tugas -->
+          <form id="formTugas" class="mb-2">
+            <div class="flex gap-2">
+              <input
+                id="inputJudul"
+                type="text"
+                placeholder="Judul tugas baru"
+                class="flex-1 border border-gray-300 rounded px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              />
+              <button
+                id="tombolSimpan"
+                type="submit"
+                class="bg-[#08306B] hover:bg-blue-700 text-white px-4 py-2 rounded"
+              >
+                Simpan
+              </button>
+            </div>
+            <p id="errorForm" class="text-red-600 text-sm mt-1"></p>
+          </form>
+
+          <p id="notifikasi" class="text-green-600 text-sm mb-3"></p>
+
+          <p id="kosongTugas" class="text-gray-500 hidden">Tidak ada tugas yang cocok</p>
+          <ul id="daftarTugas" class="space-y-2"></ul>
+        </div>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
